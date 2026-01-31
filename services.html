@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | AI Development, Web & Mobile App Development</title>
+    <meta name="description" content="Professional AI Development, Web Development, Mobile App Development, SaaS Solutions, and UI/UX Design services by NexGenAiTech.">
+    <meta name="keywords" content="AI Development Services, Web Development, Mobile App Development, SaaS Solutions, UI/UX Design, Full-Stack Development">
+    <meta name="author" content="Jahid Ansari - NexGenAiTech">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nexgenaitech.com/services.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Our Services | AI Development, Web & Mobile App Development">
+    <meta property="og:description" content="Professional AI Development, Web Development, Mobile App Development services">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexgenaitech.com/services.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Services - NexGenAiTech">
+    <meta name="twitter:description" content="AI Development, Web & Mobile App Development services">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "AI Development, Web Development, Mobile App Development",
+        "provider": {
+            "@type": "Organization",
+            "name": "NexGenAiTech"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "India"
+        }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Page Specific CSS -->
+    <style>
+        /* Services Page Specific Styles */
+        .service-detail-section {
+            padding: 100px 0;
+        }
+        
+        .service-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 80px;
+        }
+        
+        .service-sidebar {
+            position: sticky;
+            top: 120px;
+            background: var(--dark-gray);
+            border-radius: var(--border-radius);
+            padding: 30px;
+        }
+        
+        .service-nav {
+            list-style: none;
+        }
+        
+        .service-nav li {
+            margin-bottom: 10px;
+        }
+        
+        .service-nav a {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            color: var(--light-gray);
+            text-decoration: none;
+            border-radius: var(--border-radius-sm);
+            transition: all var(--transition-normal);
+        }
+        
+        .service-nav a:hover,
+        .service-nav a.active {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .service-nav i {
+            margin-right: 10px;
+            width: 20px;
+        }
+        
+        .service-content {
+            padding-left: 40px;
+        }
+        
+        .service-hero {
+            margin-bottom: 60px;
+        }
+        
+        .service-features {
+            margin: 60px 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-item {
+            background: var(--dark-gray);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .tech-stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .tech-item {
+            background: var(--dark-gray);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            transition: all var(--transition-normal);
+        }
+        
+        .tech-item:hover {
+            transform: translateY(-5px);
+            background: var(--primary-color);
+        }
+        
+        .tech-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .tech-item:hover .tech-icon {
+            color: var(--white);
+        }
+        
+        .pricing-section {
+            background: var(--dark-gray);
+            border-radius: var(--border-radius);
+            padding: 60px;
+            margin-top: 80px;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .pricing-card {
+            background: var(--dark-color);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all var(--transition-normal);
+        }
+        
+        .pricing-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-10px);
+        }
+        
+        .pricing-card.popular {
+            position: relative;
+            border-color: var(--primary-color);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .price-amount {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
+        
+        .price-period {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            color: var(--light-gray);
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-features i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+        
+        .service-faq {
+            margin-top: 100px;
+        }
+        
+        .faq-item {
+            background: var(--dark-gray);
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--white);
+        }
+        
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all var(--transition-normal);
+            color: var(--light-gray);
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 30px 25px;
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform var(--transition-normal);
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        .cta-service {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+            border-radius: var(--border-radius);
+            padding: 80px 60px;
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        @media (max-width: 991px) {
+            .service-detail-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-sidebar {
+                position: static;
+                margin-bottom: 40px;
+            }
+            
+            .service-content {
+                padding-left: 0;
+            }
+            
+            .pricing-section {
+                padding: 40px 20px;
+            }
+            
+            .cta-service {
+                padding: 60px 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .service-detail-section {
+                padding: 60px 0;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="logo-pulse">
+                <span>N</span>
+            </div>
+            <h3 class="preloader-text">NexGenAiTech</h3>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">N</span>
+                    <span class="logo-text">NexGenAiTech</span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item active"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+                        <li class="nav-item"><a href="process.html" class="nav-link">Process</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="nav-cta">Get Quote</a>
+                </div>
+                
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content animate-on-scroll">
+                <h1 class="page-title">Our <span class="highlight">Services</span></h1>
+                <p class="page-subtitle">Comprehensive AI and Full-Stack Development solutions to transform your digital presence</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">Services</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="currentColor"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35,6.36,119.13-6.2,33.79-11.18,66.43-27.25,97.41-45.67C939.06,29.08,1059.43,6.75,1200,27.23V0Z" opacity=".5" fill="currentColor"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview section-padding">
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <h2 class="section-title">What We <span class="highlight">Offer</span></h2>
+                <p class="section-subtitle">End-to-end digital solutions tailored to your business needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll" id="ai">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="service-title">AI & Machine Learning</h3>
+                    <p class="service-description">Intelligent solutions powered by artificial intelligence and machine learning algorithms</p>
+                    <a href="#ai-detail" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card animate-on-scroll" data-delay="0.1" id="web">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">Modern, responsive websites and web applications using latest technologies</p>
+                    <a href="#web-detail" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card animate-on-scroll" data-delay="0.2" id="mobile">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Mobile App Development</h3>
+                    <p class="service-description">Native and cross-platform mobile applications for iOS and Android</p>
+                    <a href="#mobile-detail" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card animate-on-scroll" data-delay="0.3" id="saas">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="service-title">SaaS Development</h3>
+                    <p class="service-description">Scalable Software-as-a-Service platforms with subscription models</p>
+                    <a href="#saas-detail" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card animate-on-scroll" data-delay="0.4" id="enterprise">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="service-title">Enterprise Solutions</h3>
+                    <p class="service-description">Custom software for business operations, CRM, ERP, and automation</p>
+                    <a href="#enterprise-detail" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card animate-on-scroll" data-delay="0.5" id="ui">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">User-centered design for enhanced engagement and conversion</p>
+                    <a href="#ui-detail" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-detail-section" id="ai-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-sidebar">
+                    <h3 class="sidebar-title">All Services</h3>
+                    <ul class="service-nav">
+                        <li><a href="#ai-detail" class="active"><i class="fas fa-brain"></i> AI & ML</a></li>
+                        <li><a href="#web-detail"><i class="fas fa-code"></i> Web Development</a></li>
+                        <li><a href="#mobile-detail"><i class="fas fa-mobile-alt"></i> Mobile Apps</a></li>
+                        <li><a href="#saas-detail"><i class="fas fa-cloud"></i> SaaS Solutions</a></li>
+                        <li><a href="#enterprise-detail"><i class="fas fa-server"></i> Enterprise</a></li>
+                        <li><a href="#ui-detail"><i class="fas fa-palette"></i> UI/UX Design</a></li>
+                    </ul>
+                </div>
+                
+                <div class="service-content">
+                    <div class="service-hero">
+                        <span class="service-category">AI Development</span>
+                        <h2 class="service-title-main">AI & Machine Learning Solutions</h2>
+                        <p class="service-description-main">Harness the power of artificial intelligence to transform your business operations, gain insights from data, and automate complex processes.</p>
+                    </div>
+                    
+                    <div class="service-features">
+                        <h3 class="section-subtitle">What We Offer</h3>
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h4>Predictive Analytics</h4>
+                                <p>Forecast trends and make data-driven decisions with advanced predictive models</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h4>Computer Vision</h4>
+                                <p>Image and video analysis for object detection, facial recognition, and more</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <h4>Natural Language Processing</h4>
+                                <p>Text analysis, sentiment analysis, chatbots, and language translation</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4>Recommendation Systems</h4>
+                                <p>Personalized recommendations for e-commerce, content, and services</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <h3 class="section-subtitle">Our AI Tech Stack</h3>
+                        <div class="tech-stack-grid">
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <span>PyTorch</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <span>OpenAI API</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <span>Scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-process">
+                        <h3 class="section-subtitle">Our AI Development Process</h3>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Data Collection & Analysis</h4>
+                                    <p>Gather and preprocess relevant data for model training</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Model Selection & Training</h4>
+                                    <p>Choose appropriate algorithms and train models on your data</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Testing & Validation</h4>
+                                    <p>Validate model performance and fine-tune parameters</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Deployment & Integration</h4>
+                                    <p>Deploy models to production and integrate with your systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Similar sections for other services would follow here -->
+    <!-- Due to length, I'm showing structure for one service -->
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <h2 class="section-title">Flexible <span class="highlight">Pricing</span></h2>
+                <p class="section-subtitle">Choose the plan that fits your business needs</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card animate-on-scroll">
+                    <h3 class="pricing-title">Basic</h3>
+                    <div class="price-amount">₹15,000</div>
+                    <div class="price-period">Per Project</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Basic Website Development</li>
+                        <li><i class="fas fa-check"></i> 5 Pages</li>
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> 1 Month Support</li>
+                        <li><i class="fas fa-times"></i> Custom Features</li>
+                        <li><i class="fas fa-times"></i> Advanced SEO</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get Started</a>
+                </div>
+                
+                <div class="pricing-card popular animate-on-scroll" data-delay="0.1">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3 class="pricing-title">Professional</h3>
+                    <div class="price-amount">₹50,000</div>
+                    <div class="price-period">Per Project</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Custom Web Application</li>
+                        <li><i class="fas fa-check"></i> 15+ Pages</li>
+                        <li><i class="fas fa-check"></i> Database Integration</li>
+                        <li><i class="fas fa-check"></i> 6 Months Support</li>
+                        <li><i class="fas fa-check"></i> Custom Features</li>
+                        <li><i class="fas fa-check"></i> Basic SEO</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="pricing-card animate-on-scroll" data-delay="0.2">
+                    <h3 class="pricing-title">Enterprise</h3>
+                    <div class="price-amount">Custom</div>
+                    <div class="price-period">Contact for Quote</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full-Stack Solution</li>
+                        <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                        <li><i class="fas fa-check"></i> AI Integration</li>
+                        <li><i class="fas fa-check"></i> 1 Year Support</li>
+                        <li><i class="fas fa-check"></i> Advanced Features</li>
+                        <li><i class="fas fa-check"></i> Complete SEO</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="service-faq section-padding">
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+                <p class="section-subtitle">Find answers to common questions about our services</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>What is your typical project timeline?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on complexity. A basic website takes 2-3 weeks, web applications 4-8 weeks, and complex AI projects 8-12 weeks. We provide detailed timelines after requirement analysis.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll" data-delay="0.1">
+                    <div class="faq-question">
+                        <span>Do you provide ongoing maintenance?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer maintenance packages starting from ₹5,000/month. This includes updates, security patches, backups, and 24/7 monitoring. Custom packages are available based on your needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll" data-delay="0.2">
+                    <div class="faq-question">
+                        <span>What technologies do you work with?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We work with modern technologies including React, Node.js, Python, TensorFlow, Flutter, AWS, and more. We choose the best stack for your specific project requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll" data-delay="0.3">
+                    <div class="faq-question">
+                        <span>Can you work with existing codebases?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We can analyze, improve, and extend your existing codebase. We also offer code audits and refactoring services to improve performance and maintainability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-service">
+        <div class="container">
+            <div class="cta-content text-center animate-on-scroll">
+                <h2 class="cta-title">Ready to Start Your Project?</h2>
+                <p class="cta-subtitle">Get a free consultation and project estimate within 24 hours</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-light">
+                        <span>Get Free Quote</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                    <a href="tel:+918055698328" class="btn btn-outline-light">
+                        <span>Call Now</span>
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">N</span>
+                        <span class="logo-text">NexGenAiTech</span>
+                    </a>
+                    <p class="footer-about">Building Intelligent Digital Solutions for the Future. Empowering businesses through AI-driven innovation.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="process.html">Our Process</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#ai">AI Development</a></li>
+                        <li><a href="services.html#web">Web Development</a></li>
+                        <li><a href="services.html#mobile">Mobile Apps</a></li>
+                        <li><a href="services.html#saas">SaaS Solutions</a></li>
+                        <li><a href="services.html#ui">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nexgenaitech7@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8055698328</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kushinagar, Uttar Pradesh, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NexGenAiTech. All rights reserved. | Founded by Jahid Ansari</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Quick Contact -->
+    <div class="quick-contact">
+        <a href="https://wa.me/918055698328" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+918055698328" class="call-btn" aria-label="Call us">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Service navigation
+            const serviceLinks = document.querySelectorAll('.service-nav a');
+            const serviceSections = document.querySelectorAll('[id$="-detail"]');
+            
+            // Intersection Observer for active service tracking
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        serviceLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            serviceSections.forEach(section => observer.observe(section));
+            
+            // Smooth scroll for service links
+            serviceLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
